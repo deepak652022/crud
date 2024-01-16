@@ -1,0 +1,14 @@
+$sql1 = "select * from student";
+    $result = mysqli_query($con,$sql1);
+
+
+    result id object ( Uncaught Error: Object of class mysqli_result could not be converted to string )
+
+
+    mysqli_query($con,$sql1) ->return object and convert to string using implode function to get data in a single string
+
+
+mysqli_fetch_assoc($result) -> returns array and should be convert to string
+
+
+
